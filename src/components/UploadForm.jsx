@@ -12,7 +12,8 @@ const UploadForm = ({isPro}) => {
   const router = useRouter();
 
   function handleMustUpgrade(){
-    return alert("Upgrade your plan to pro before continue");
+    alert("Upgrade your plan to pro before continue");
+    location.reload();
   }
 
   async function upload(event) {

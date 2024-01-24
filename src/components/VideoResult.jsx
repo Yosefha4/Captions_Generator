@@ -106,7 +106,7 @@ export default function VideoResult({ filename, transcriptionItems }) {
       <div className="mb-4">
         <button
           onClick={transcode}
-          className="bg-gray-200 text-black py-2 px-6 rounded-full inline-flex gap-2 border-2 border-black/80 font-bold cursor-pointer"
+          className="bg-gray-200 text-black items-center py-2 px-6 rounded-full inline-flex gap-2 border-2 border-black/80 font-bold cursor-pointer"
         >
           <SparksIcon />
           <span>Apply captions</span>

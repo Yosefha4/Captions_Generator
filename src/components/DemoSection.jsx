@@ -14,6 +14,7 @@ const DemoSection = () => {
           muted
           autoPlay
           loop
+          playsInline
         ></video>
       </div>
       <div className="bg-orange-400">
@@ -27,6 +28,7 @@ const DemoSection = () => {
           muted
           autoPlay
           loop
+          playsInline
  
         ></video>
       </div>

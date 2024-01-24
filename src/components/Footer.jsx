@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer >
-      <div className="flex items-center justify-between w-full mt-20 mb-4 py-4 border-t border-slate-200">
+      <div className="flex flex-col-reverse sm:flex-row gap-4 sm:gap-0 items-center justify-between w-full mt-20 mb-4 py-4 border-t border-slate-200">
         <div className="">
           <span className="text-sm">© 2023 – 2024 Yosef dev. All rights reserved</span>
         </div>

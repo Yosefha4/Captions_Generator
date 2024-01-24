@@ -18,10 +18,11 @@ const SubscriptionButton = ({ isPro }) => {
   };
 
   return (
-    <label onClick={handleUpgradeToPro}
+    <label
+      onClick={handleUpgradeToPro}
       className="bg-black cursor-pointer text-gray-200 py-2 px-3
     rounded-full inline-flex gap-2
-   shadow-md shadow-black items-center font-bold"
+   shadow-md shadow-black items-center font-bold justify-center"
     >
       <Gem size={18} />
       <span>{isPro ? "Manage Plan" : "Get Pro"}</span>

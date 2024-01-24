@@ -48,7 +48,7 @@ export async function GET() {
               name: "Captions Pro",
               description: "Unlimited Videos!",
             },
-            unit_amount: 2000,
+            unit_amount: 2900,
             recurring: {
               interval: "month",
             },

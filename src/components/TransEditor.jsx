@@ -12,7 +12,7 @@ const TransEditor = ({ awsTransItem, setAwsTransItem }) => {
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-1 sticky top-0 bg-red-700/80 p-2 rounded-md">
+      <div className="grid grid-cols-3 gap-1 sticky top-0 bg-orange-600 p-2 rounded-md">
         <div>From</div>
         <div>End</div>
         <div>Content</div>

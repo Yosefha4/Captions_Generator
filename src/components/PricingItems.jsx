@@ -1,9 +1,13 @@
+
 import React from "react";
 import PriceIcon from "./PriceIcon";
 import { checkSubscription } from "@/app/libs/subscription";
+import SubscriptionButton from "./SubscriptionButton";
 
 const PricingItems = async () => {
   const isPro = await checkSubscription();
+
+
 
   return (
     <section className="flex flex-col md:flex-row gap-5 md:gap-0 mt-12 justify-around items-center my-20">
@@ -50,7 +54,7 @@ const PricingItems = async () => {
         <div className="">
           <h2 className="text-3xl text-center my-2 font-serif">Pro</h2>
           <span className="text-sm text-black/70 mx-1">
-            Relevant for advanced studies, research works & academic works.
+          Create more content in less time & Supercharge your content creation workflow.
           </span>
         </div>
         <div className="flex  justify-center items-center gap-1">
@@ -76,10 +80,10 @@ const PricingItems = async () => {
             <span className="text-sm text-start text-black/80" >Export in +10 formats</span>
           </div>
         </div>
-
-        <button className="bg-orange-600 py-1 text-white font-semibold">Get Started
+        <SubscriptionButton isPro={isPro} />
+        {/* <button className="bg-orange-600 py-1 text-white font-semibold">Get Started
         
-        </button>
+        </button> */}
       </div>) :( <div>
         <h1 className="bg-black/70">You Are Pro.</h1>
       </div>)}

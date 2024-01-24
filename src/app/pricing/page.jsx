@@ -1,10 +1,10 @@
+
 import HeroSection from "@/components/HeroSection";
 import PricingItems from "@/components/PricingItems";
 import React from "react";
 import { checkSubscription } from "../libs/subscription";
 
-const PricingPage = async () => {
-  const isPro = await checkSubscription();
+const PricingPage =  () => {
 
   return (
     <div>
