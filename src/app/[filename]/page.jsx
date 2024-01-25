@@ -40,19 +40,21 @@ const FilePage = ({ params }) => {
 
   function getTranscription() {
     setIsFetchInfo(true);
-    axios.get('/api/transcription?filename='+filename).then(response => {
+    axios.get("/api/transcription?filename=" + filename).then((response) => {
       setIsFetchInfo(false);
       const status = response.data?.status;
       const transcription = response.data?.transcription;
-      if (status === 'IN_PROGRESS') {
+      if (status === "IN_PROGRESS") {
         setInProgress(true);
         setTimeout(getTranscription, 3000);
       } else {
         setInProgress(false);
-
-        setAwsTransItem(
-          clearTranscriptionItems(transcription.results.items)
-        );
+        {
+          transcription &&
+            setAwsTransItem(
+              clearTranscriptionItems(transcription.results.items)
+            );
+        }
       }
     });
   }
@@ -60,7 +62,7 @@ const FilePage = ({ params }) => {
   if (inProgress) {
     return <div>Transcribing your video...</div>;
   }
-  
+
   if (isFetchInfo) {
     return <div>Fetching information...</div>;
   }

@@ -7,8 +7,8 @@ const Header =  async() => {
   // const { userId } = await auth();
   // const isAuth = !!userId;
   return (
-    <header className="flex justify-between items-center  text-lg  my-2 border-b border-gray-200">
-      <Link href="/" className="flex gap-1 text-black font-bold rounded-md p-1">
+    <header className="flex justify-evenly md:justify-between items-center  text-lg  my-2 border-b border-gray-200">
+      <Link href="/" className=" gap-1 text-black font-bold rounded-md p-1 hidden md:block">
         {/* <SparksIcon /> */}
         <span className="text-orange-600">CaptionsPlus⁺</span>
       </Link>

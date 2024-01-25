@@ -5,6 +5,8 @@ import React, { useState } from "react";
 
 const SubscriptionButton = ({ isPro }) => {
   const [loading, setLoading] = useState(false);
+
+
   const handleUpgradeToPro = async () => {
     try {
       setLoading(true);

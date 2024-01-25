@@ -13,6 +13,8 @@ import { checkSubscription } from "./libs/subscription";
 import SubscriptionButton from "@/components/SubscriptionButton";
 import { ArrowRight, ArrowRightSquare } from "lucide-react";
 import MoreTools from "@/components/MoreTools";
+import Image from "next/image";
+import Ranking from "@/components/Ranking";
 
 const Home = async () => {
   const { userId } = await auth();
@@ -27,6 +29,7 @@ const Home = async () => {
         h1Text="Add captions to your videos"
         h2Text="Just upload your video and we will do the rest."
       />
+
 
       <div className="text-center">
         {isAuth ? (
@@ -47,11 +50,21 @@ const Home = async () => {
           </Link>
         )}
       </div>
+
+
       <DemoSection />
+
+          <div className="flex flex-col w-full mt-12 items-center justify-center">
+           
+            <Ranking />
+      {/* <Image src='/stepsImg.png' alt="Caption image for small screens" width={450} height={100}/> */}
+      </div>
+
       <HeroSection
         h1Text="More AI Tools"
         h2Text="Just upload your video and we will do the rest."
       />
+
       <MoreTools/>
       <Footer />
     </NoSSRWrapper>
