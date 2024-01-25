@@ -9,7 +9,7 @@ const DemoSection = () => {
         
         <video
           className="h-full"
-          src="https://yosef-captions.s3.amazonaws.com/y0lrj5zlhc.mp4"
+          src="/without-captions.mp4"
           preload="true"
           muted
           autoPlay
@@ -23,7 +23,7 @@ const DemoSection = () => {
       <div className="bg-black/40 w-[240px] h-[480px] rounded-xl">
         <video
           className="h-full "
-          src="https://yosef-captions.s3.amazonaws.com/y0lrj62sik.mp4"
+          src="/WithCap.mp4"
           preload="true"
           muted
           autoPlay
