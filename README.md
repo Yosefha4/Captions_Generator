@@ -1,3 +1,9 @@
+
+### Captions Generator Application , using latest next.js 13, react, tailwind.css and webassebly. storage in aws s3 bucket and transcription with aws transribe service.
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
