@@ -7,6 +7,10 @@ Visit : [https://captions-generator-rho.vercel.app/]
 ## 
 
 
+https://github.com/Yosefha4/Captions_Generator/assets/73281960/770f2c4c-f3fa-4fa4-ab30-db297b11a222
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
