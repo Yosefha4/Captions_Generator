@@ -60,7 +60,7 @@ const UploadForm = ({isPro}) => {
         <UploadIcon />
 
         <span className="font-semibold">Choose File</span>
-        <input onChange={isPro ? upload : handleMustUpgrade} type="file" className="hidden" />
+        <input onChange={upload} type="file" className="hidden" />
       </label>
     </>
   );
